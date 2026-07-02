@@ -10,3 +10,7 @@ pypdf
 python-dotenv
 fastapi
 pydantic
+uvicorn
+python-multipart
+pymupdf
+langchain-chroma
