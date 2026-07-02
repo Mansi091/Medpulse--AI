@@ -1,6 +1,6 @@
 # MedPulse AI: Multimodal Document Intelligence Platform
 
-MedPulse AI is a production-grade, lightweight Retrieval-Augmented Generation (RAG) workspace designed to ingest and analyze medical clinical records (PDFs) and clinical scans (PNG/JPG/JPEG images) simultaneously. By combining textual chunking and Vision LLM-driven image description, MedPulse AI enables users to perform cross-document medical reasoning inside a unified, real-time conversational chat interface.
+MedPulse AI is a lightweight Retrieval-Augmented Generation (RAG) workspace designed to ingest and analyze medical clinical records (PDFs) and clinical scans (PNG/JPG/JPEG images) simultaneously. By combining textual chunking and Vision LLM-driven image description, MedPulse AI enables users to perform cross-document medical reasoning inside a unified, real-time conversational chat interface.
 
 ---
 
