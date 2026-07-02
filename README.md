@@ -8,7 +8,7 @@ MedPulse AI is a lightweight Retrieval-Augmented Generation (RAG) workspace desi
 
 * **Multi-File Ingestion Workspace:** Upload multiple medical records (PDFs) and standalone diagnostic scans (such as chest X-rays or prescriptions) at the same time.
 * **Scan & X-Ray Analysis (Vision LLM):** Automatically extracts embedded images from PDFs and analyzes standalone images using **Llama 4 Scout (17B)** to detect clinical abnormalities, pathologies, and fractures.
-* **Conversational Query Rewriting:** Reformulates conversational, multi-turn follow-up queries (like *"what issue i mean"*) into standalone database search queries to prevent RAG retrieval failures.
+* **Conversational Query Rewriting:** Reformulates conversational, multi-turn follow-up queries into standalone database search queries to prevent RAG retrieval failures.
 * **Two-Stage Hybrid Search:** Combines dense vector search (**ChromaDB** with sentence-transformers) and sparse keyword search (**BM25**) to maximize retrieval accuracy.
 * **Sleek UI with Token Streaming:** A minimal, single-window frontend styled like **Shadcn UI** built using **React** and **Tailwind CSS** that consumes FastAPI token streams for real-time response rendering.
 * **File-Lock Safety:** Handles persistent ChromaDB connections dynamically on Windows to prevent resource lock write permission exceptions during workspace resets.
