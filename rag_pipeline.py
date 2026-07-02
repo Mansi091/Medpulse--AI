@@ -6,7 +6,7 @@ import os
 from langchain_groq import ChatGroq
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_core.embeddings import FakeEmbeddings
+from langchain_community.embeddings import HuggingFaceInferenceAPIEmbeddings
 from langchain_chroma import Chroma
 from langchain_community.retrievers import BM25Retriever
 from langchain_classic.retrievers import EnsembleRetriever
@@ -19,7 +19,11 @@ load_dotenv()
 
 
 def init_embeddings():
-    return FakeEmbeddings(size=384)
+    hf_token = os.getenv("HF_TOKEN")
+    return HuggingFaceInferenceAPIEmbeddings(
+        api_key=hf_token,
+        model_name="sentence-transformers/all-MiniLM-L6-v2"
+    )
 
 
 def init_llm():
