@@ -6,7 +6,7 @@ import os
 from langchain_groq import ChatGroq
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_core.embeddings import FakeEmbeddings
 from langchain_chroma import Chroma
 from langchain_community.retrievers import BM25Retriever
 from langchain_classic.retrievers import EnsembleRetriever
@@ -19,9 +19,7 @@ load_dotenv()
 
 
 def init_embeddings():
-    return HuggingFaceEmbeddings(
-        model_name="sentence-transformers/all-MiniLM-L6-v2"
-    )
+    return FakeEmbeddings(size=384)
 
 
 def init_llm():
