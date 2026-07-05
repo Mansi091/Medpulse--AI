@@ -1,5 +1,7 @@
 # MedPulse AI: Multimodal Clinical RAG & Document Intelligence
 
+🚀 **[Live Demo on Render](https://medpulse-ai-wpjb.onrender.com)**
+
 MedPulse AI is a Retrieval-Augmented Generation (RAG) platform designed for clinical document search, analysis, and medical image interpretation.
 
 ---
@@ -95,5 +97,7 @@ pip install -r requirements.txt
 ```powershell
 python -m uvicorn main:app --reload
 ```
-*   Access the workspace interface at: **`http://127.0.0.1:8000/`**
-*   Access the Swagger API documentation at: **`http://127.0.0.1:8000/docs`**
+*   Access the local workspace interface at: **`http://127.0.0.1:8000/`**
+*   Access the live demo on Render: **`https://medpulse-ai-wpjb.onrender.com`**
+*   Access the local Swagger API documentation at: **`http://127.0.0.1:8000/docs`**
+
